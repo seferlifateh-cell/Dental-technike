@@ -1,0 +1,64 @@
+{
+  "firestore": {
+    "collections": {
+      "users": {
+        "description": "User profiles tracked by Firebase Auth UID",
+        "documents": {
+          "{userId}": {
+            "fields": {
+              "name": "string",
+              "role": "string",
+              "clinicOrLab": "string",
+              "email": "string",
+              "lastLogin": "timestamp"
+            }
+          }
+        }
+      },
+      "jobs": {
+        "description": "Dental orders synchronized across devices for user",
+        "documents": {
+          "{jobId}": {
+            "fields": {
+              "id": "string",
+              "userId": "string",
+              "patientName": "string",
+              "providerName": "string",
+              "title": "string",
+              "description": "string",
+              "startDate": "string",
+              "deadline": "string",
+              "status": "string",
+              "paymentStatus": "string",
+              "totalAmount": "number",
+              "paidAmount": "number",
+              "currency": "string",
+              "amountInAzn": "number",
+              "isDelivered": "boolean",
+              "updatedAt": "timestamp"
+            }
+          }
+        }
+      },
+      "transactions": {
+        "description": "Ledger of financial entries of user",
+        "documents": {
+          "{transactionId}": {
+            "fields": {
+              "id": "string",
+              "userId": "string",
+              "date": "string",
+              "type": "string",
+              "amount": "number",
+              "currency": "string",
+              "amountInAzn": "number",
+              "description": "string",
+              "category": "string",
+              "jobId": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

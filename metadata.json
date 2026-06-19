@@ -1,0 +1,6 @@
+{
+  "name": "Diş Həkimi və Texnik İdarəetmə Paneli",
+  "description": "Diş həkimləri və texnikləri üçün interaktiv iş axını, təqvim əsaslı gəlir/xərc hesabatı, müqavilə/iş statusu və DB cədvəli memarlığı paneli.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
